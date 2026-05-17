@@ -13,27 +13,30 @@
 }
 .portfolio-item {
     width: 360px;
+    position: relative;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item img {
     object-fit: cover;
 }
-.cashles-overley {
+.portfolio-image-wrapper {
     position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 }
 .overley-wrap {
     background-color: #4D5AE5;
     color: #F4F4FD;
-    padding: 40px 32px 164px 32px;
     line-height: 1.5;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
     position: absolute;
     left: 0;
     top:0;
@@ -44,7 +47,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cashles-overley:hover .overley-wrap {
+.portfolio-item:hover .portfolio-image-wrapper .overley-wrap {
    transform: translateY(0);
 }
 .portfolio-list-wrap {
