@@ -34,9 +34,7 @@
     background-color: #4D5AE5;
     color: #F4F4FD;
     line-height: 1.5;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 40px;
+    padding: 40px 32px;
     position: absolute;
     left: 0;
     top:0;

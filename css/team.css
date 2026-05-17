@@ -45,7 +45,6 @@
 }
 .social-list {
     display: flex;
-    gap: 24px;
     justify-content: space-between;
 }
 .social-link {
@@ -59,7 +58,8 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #f4f4fd;    
+    fill: #f4f4fd;
+    margin-right: 24px;    
 }
 .social-link:hover, .social-link:focus {
     background-color: #404BBF;
